@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "QtTinySA"
+version = "0.10.6"
+description = "A Python 'TinySA' GUI programme using Qt5 and PyQt5"
+authors = ["G4IXT <ian.jefferson@btinternet.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/darknetehf/QtTinySA"
+repository = "https://github.com/darknetehf/QtTinySA"
+keywords = ["tinysa", "spectrum analyzer"]
+classifiers = [
+    "Topic :: Communications :: Ham Radio",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+packages = [{include = "QtTinySA", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+altgraph = "^0.17.4"
+numpy = "^2.0.1"
+platformdirs = "^4.2.2"
+pyopengl = "3.1.1a1"
+pyqt5 = "5.15.10"
+pyqt5-sip = "^12.15.0"
+pyqtgraph = "^0.13.7"
+pyserial = "^3.5"
+
+[tool.poetry.scripts]
+qttinysa = "QtTinySA.QtTinySA:app.exec"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
