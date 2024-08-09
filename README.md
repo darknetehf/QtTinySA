@@ -1,6 +1,28 @@
 # QtTinySA  
 ![Screenshot_20240404_143416](https://github.com/g4ixt/QtTinySA/assets/76836635/47d9e6e9-daeb-4ae3-8e9c-91b5f041f6ff)
 
+**NOTE**: this is a Python Poetry fork of the original project.
+
+The aim is to:
+- facilitate the handling of Python dependencies
+- create virtual environments automatically
+- create executable scripts (qttinysa)
+
+You can install this application on your system by running this command (tested on Linux):
+
+    pipx install "git+https://github.com/darknetehf/QtTinySA.git"
+
+This automatically creates a virtual environment, installs the package, and adds the package's associated applications (entry points) to a location on your PATH.
+Then run this command to invoke the startup script:
+
+    qttinysa
+
+You may have to run this command the first time: `pipx ensurepath`
+to add the install directory (eg ~/.local/bin) to your environment path.
+Check the [pipx doc](https://pipx.pypa.io/stable/) for details.
+
+___
+
 A Python 'TinySA Ultra' (and original 'TinySA') GUI programme using Qt5 and PyQt5. Designed to run in Linux but works in Windows (minimal testing) and mac (no testing).  
 The Windows executable does not work on Windows versions < 10. 
 
