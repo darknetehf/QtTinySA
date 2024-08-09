@@ -26,7 +26,7 @@ pyqtgraph = "^0.13.7"
 pyserial = "^3.5"
 
 [tool.poetry.scripts]
-qttinysa = "QtTinySA.QtTinySA:app.exec"
+qttinysa = "QtTinySA.main:app.exec"
 
 [build-system]
 requires = ["poetry-core"]
